@@ -1,0 +1,19 @@
+{
+    "_id":{
+        "type": "integer",
+        "format": "int64"
+      },
+      "title": {
+        "type": "string"
+      },
+      "link": {
+        "type": "string"
+      },
+      "pubDate": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "content": {
+        "type": "string"
+      }
+}

@@ -1,0 +1,23 @@
+{
+  "/category": {
+    "$ref": "./category/category.json"
+  },
+  "/category/{id}": {
+    "$ref": "./category/category_id.json"
+  },
+  "/category/{id}/article": {
+    "$ref": "./category/category_article.json"
+  },
+  "/category/{id}/article/{total}": {
+    "$ref": "./category/category_article_total.json"
+  },
+  "/article/{id}": {
+    "$ref": "./article/article_id.json"
+  },
+  "/price/gold": {
+    "$ref": "./price/gold.json"
+  },
+  "/price/coin": {
+    "$ref": "./price/coin.json"
+  }
+}

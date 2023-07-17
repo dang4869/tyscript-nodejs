@@ -1,0 +1,14 @@
+{
+    "type": "object",
+          "properties": {
+            "buy": {
+              "type": "string"
+            },
+            "sell": {
+              "type": "number"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+}

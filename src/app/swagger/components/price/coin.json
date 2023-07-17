@@ -1,0 +1,18 @@
+{
+    "type": "object",
+          "properties":{
+            "_id":{
+              "type": "integer",
+              "format": "int64"
+            },
+            "name": {
+              "type": "string"
+            },
+            "price": {
+              "type": "number"
+            },
+            "percent_change_24h": {
+              "type": "number"
+            }
+          }
+}

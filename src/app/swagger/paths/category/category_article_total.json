@@ -1,0 +1,48 @@
+{
+    "get": {
+        "tags": ["category"],
+        "summary": "Get all articles in category with id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of category",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "style": "simple"
+          },
+          {
+            "name": "total",
+            "in": "path",
+            "description": "Number article",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "style": "simple"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schemas": {
+                    "$ref": "#/components/schemas/article"
+                  }
+              }
+            }
+          }
+          
+        }
+      }
+}

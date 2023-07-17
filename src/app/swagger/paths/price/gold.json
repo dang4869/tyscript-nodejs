@@ -1,0 +1,19 @@
+{
+    "get": {
+        "tags": ["price"],
+        "summary": "Get All gold",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schemas": {
+                    "$ref": "#/components/schemas/gold"
+                  }
+              }
+            }
+          }
+          
+        }
+      }
+}

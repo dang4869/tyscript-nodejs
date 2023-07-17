@@ -89,8 +89,6 @@ class ItemController {
       });
   }
   public async add(req: Request, res: Response, next: NextFunction) {
-    const err = await ValidateReq.init(req, res, next);
-    if (!err) {
       Category.create(req.body)
         .then((item) => {
           res.status(200).json({
@@ -106,11 +104,9 @@ class ItemController {
             error: error,
           });
         });
-    }
   }
-  public async edit(req: Request, res: Response, next: NextFunction) {
-    const err = await ValidateReq.init(req, res, next);
-    if (!err) {
+ edit(req: Request, res: Response, next: NextFunction) {
+    
       Category.updateOne({ _id: req.params.id }, req.body)
         .then((item) => {
           res.status(200).json({
@@ -125,7 +121,7 @@ class ItemController {
             error,
           });
         });
-    }
+    
   }
   delete(req: Request, res: Response, next: NextFunction) {
     Category.deleteOne({ _id: req.params.id })

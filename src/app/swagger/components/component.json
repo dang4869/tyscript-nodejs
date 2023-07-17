@@ -1,0 +1,20 @@
+{
+  "schemas": {
+    "$ref": "./id/id.json"
+  },
+  "Category": {
+    "$ref": "./category/category.json"
+  },
+  "BodyCategory": {
+    "$ref": "./category/category_body.json"
+  },
+  "article": {
+    "$ref": "./article/article.json"
+  },
+  "coin": {
+    "$ref": "./price/coin.json"
+  },
+  "gold": {
+    "$ref": "./price/gold.json"
+  }
+}

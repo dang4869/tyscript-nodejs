@@ -1,0 +1,14 @@
+{
+    "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            }
+          }
+}

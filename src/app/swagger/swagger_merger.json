@@ -1,0 +1,9 @@
+{
+   "$ref": "../swagger/config.json",
+     "paths": {
+      "$ref": "../swagger/paths/paths.json"
+     },
+  "components": {
+    "$ref": "../swagger/components/component.json"
+  }
+}

@@ -9,11 +9,11 @@ export default class ItemRouter {
     this.routes();
   }
   public routes(): void {
-    this.router.delete("/delete/:id", CategoryController.delete);
-    this.router.put("/edit/:id",validator, CategoryController.edit);
+    this.router.delete("/:id", CategoryController.delete);
+    this.router.put("/:id",validator, CategoryController.edit);
     this.router.get("/:id", CategoryController.showOne);
     this.router.get("/:id/article(/:total)?", CategoryController.getArticleCategory)
-    this.router.post("/add",validator, CategoryController.add);
+    this.router.post("/",validator, CategoryController.add);
     this.router.get("/", CategoryController.index);
   }
 }
